@@ -1,0 +1,10 @@
+[Unit]
+Description=Directory Watcher to Reload HAProxy
+After=network.target
+
+[Service]
+ExecStart=/opt/sslify/worker.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
